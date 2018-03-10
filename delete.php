@@ -6,7 +6,7 @@ require_once 'actions/db_connect.php';
 if($_GET['id']) {
     $id = $_GET['id'];
 
-    $sql = "SELECT * FROM tables WHERE id = {$id}";
+    $sql = "SELECT * FROM events WHERE id = {$id}";
     $result = $conn->query($sql);
     $data = $result->fetch_assoc();
 
